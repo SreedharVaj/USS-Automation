@@ -1,0 +1,41 @@
+jde_services:
+  enterprise:
+    - name: "JDE SM Agent"
+      script: "/u01/jde_home/SCFHA/bin/startAgent"
+      user: "jde920"
+    - name: "Enterprise Server"
+      script: "/u01/jdedwardsppack/e920/system/bin32/RunOneWorld.sh"
+      user: "jde920"
+
+  bssv_rte:
+    - name: "JDE SM Agent"
+      script: "/u01/jde_home/SCFHA/bin/startAgent"
+      user: "oracle"
+    - name: "Node Manager"
+      script: "/u01/OracleWLG/MW/Oracle_Home/user_projects/domains/base_domain/bin/startNodeManager.sh"
+      user: "oracle"
+    - name: "WebLogic Admin Server"
+      script: "/u01/OracleWLG/MW/Oracle_Home/user_projects/domains/base_domain/bin/startWebLogic.sh"
+      user: "oracle"
+
+  ais:
+    - name: "JDE SM Agent"
+      script: "/u01/jde_home/SCFHA/bin/startAgent"
+      user: "oracle"
+    - name: "Node Manager"
+      script: "/u01/OracleWLG/MW/Oracle_Home/user_projects/domains/base_domain/bin/startNodeManager.sh"
+      user: "oracle"
+    - name: "WebLogic Admin Server"
+      script: "/u01/OracleWLG/MW/Oracle_Home/user_projects/domains/base_domain/bin/startWebLogic.sh"
+      user: "oracle"
+
+  web_html:
+    - name: "JDE SM Agent"
+      script: "/u01/jde_home/SCFHA/bin/startAgent"
+      user: "oracle"
+    - name: "Node Manager"
+      script: "/u01/OracleWLG/MW/Oracle_Home/user_projects/domains/base_domain/bin/startNodeManager.sh"
+      user: "oracle"
+    - name: "WebLogic Admin Server"
+      script: "/u01/OracleWLG/MW/Oracle_Home/user_projects/domains/base_domain/bin/startWebLogic.sh"
+      user: "oracle"

@@ -1,0 +1,7 @@
+---
+- name: Start JDE SM Agent Service
+  shell: "sudo -u {{ item.user }} nohup {{ item.script }} &"
+  async: 30
+  poll: 0
+  with_items: "{{ jde_services[service_group] }}"
+  when: "'JDE SM Agent' in item.name"
